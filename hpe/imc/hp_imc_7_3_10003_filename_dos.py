@@ -5,6 +5,8 @@ import struct
 import binascii
 import socket, sys
 
+# http://tenable.com/security/research/tra-2018-28
+
 def print_usage():
     print "Usage: python " + sys.argv[0] + " <ip> [port=2810]"
     sys.exit(0)

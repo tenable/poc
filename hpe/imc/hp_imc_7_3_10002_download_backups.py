@@ -11,6 +11,8 @@ import time
 import argparse
 import re
 
+# http://tenable.com/security/research/tra-2018-28
+
 class DbmanMsg(Sequence):
     componentType = NamedTypes(
         NamedType('backupDir', OctetString())
