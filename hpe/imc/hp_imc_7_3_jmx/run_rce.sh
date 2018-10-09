@@ -1,5 +1,5 @@
-lcal_ip=192.168.0.54
-target_ip=192.168.0.55
+local_ip=192.168.1.191
+target_ip=192.168.1.194
 jmx_port=9091
 truststore=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/security/cacerts
 pass=changeit
