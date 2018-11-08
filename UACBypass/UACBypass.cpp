@@ -3,12 +3,12 @@
 #include "resource.h"
 
 void DropResource(const wchar_t* rsrcName, const wchar_t* filePath) {
+	DWORD sizeOut;
 	HMODULE hMod = GetModuleHandle(NULL);
 	HRSRC res = FindResource(hMod, MAKEINTRESOURCE(IDR_DATA1), rsrcName);
 	DWORD dllSize = SizeofResource(hMod, res);
 	void* dllBuff = LoadResource(hMod, res);
 	HANDLE hDll = CreateFile(filePath, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, 0, NULL);
-	DWORD sizeOut;
 	WriteFile(hDll, dllBuff, dllSize, &sizeOut, NULL);
 	CloseHandle(hDll);
 }
