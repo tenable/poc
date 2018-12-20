@@ -4,6 +4,7 @@ Pea is a proof of concept exploit that leverages CVE-2018-1160 to control execut
 CVE-2018-1160 was patched in Netatalk 3.1.12.
 
 ## Advisory Links
+http://netatalk.sourceforge.net/3.1/ReleaseNotes3.1.12.html
 https://github.com/Netatalk/Netatalk/commit/750f9b55844b444b8ff1a38206fd2bdbab85c21f
 https://www.tenable.com/security/research/tra-2018-48
 
