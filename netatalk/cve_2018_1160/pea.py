@@ -8,7 +8,6 @@
 # Tested on: Seagate NAS OS (x86_64)
 # CVE : CVE-2018-1160
 # Advisory: https://www.tenable.com/security/research/tra-2018-48
-# Usage Example: 
 ##
 import argparse
 import socket
