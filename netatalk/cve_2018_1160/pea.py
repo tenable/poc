@@ -1,6 +1,6 @@
 ##
 # Exploit Title: Netatalk Authentication Bypass
-# Date: 12/21/2018
+# Date: 12/20/2018
 # Exploit Author: Jacob Baines
 # Vendor Homepage: http://netatalk.sourceforge.net/
 # Software Link: https://sourceforge.net/projects/netatalk/files/
