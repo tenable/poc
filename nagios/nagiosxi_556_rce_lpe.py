@@ -122,7 +122,7 @@ class ThreadedWebHandler(object):
 
 ##### MAIN #####
 
-desc = 'Nagios XI 2012r1.0 < 5.5.6 MagpieRSS Remote Code Execution and Privilege Escalation'
+desc = 'Nagios XI 5.5.6 MagpieRSS Remote Code Execution and Privilege Escalation'
 arg_parser = argparse.ArgumentParser(description=desc)
 arg_parser.add_argument('-t', required=True, help='Nagios XI IP Address (Required)')
 arg_parser.add_argument('-ip', required=True, help='HTTP listener IP')
