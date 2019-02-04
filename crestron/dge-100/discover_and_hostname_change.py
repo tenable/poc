@@ -1,8 +1,17 @@
+##
+# The following script allows the user to get the name of a remote
+# DGE-100 with CIP (UDP port 41794) and also change the name if desired.
+# Name changing triggers a reboot, so a malicious attacker could run
+# this over and over again to achieve DoS.
+#
+# Advisory: https://www.tenable.com/security/research/tra-2019-05
+##
+
 import socket
 import struct
 import argparse
 
-cmd_parser = argparse.ArgumentParser(description="lol")
+cmd_parser = argparse.ArgumentParser(description="PoC")
 cmd_parser.add_argument("-i", "--ip", action="store", dest="ip", required=True, help="The IPv4 address to connect to")
 cmd_parser.add_argument("-p", "--port", action="store", dest="port", type=int, help="The port to connect to", default="41794")
 cmd_parser.add_argument("-n", "--name", action="store", dest="name", help="The new hostname")
