@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Updatecatalog>
+	<Updates SummarySchema="2.0">
+<!--TIA V15.1 Updates Start -->
+		<Product>
+			<Name>V15TIAPORTALUPDATE</Name>
+			<NewVersionName>V15.1 Upd69</NewVersionName>
+			<DisplayName>Totally Integrated Automation Portal V15</DisplayName>
+			<Path>[MAINURL]simatic/tiaportal/SEBU-TIAPORTALUPDATE/15.1.0.4/</Path>
+			<InventoryXml>Inventory_TIAPORTAL_V15_UPD99.xml</InventoryXml>
+			<SiWA>Inventory_TIAPORTAL_V15_UPD99.exe</SiWA>
+			<CabFile>Inventory_TIAPORTAL_V15_UPD99.txt</CabFile>
+		</Product>
+	</Updates>
+</Updatecatalog>

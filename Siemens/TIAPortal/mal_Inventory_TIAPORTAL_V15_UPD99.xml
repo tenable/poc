@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InventoryDS xmlns="http://tempuri.org/InventoryDS.xsd">
+  <Product>
+    <Name>SEBU_STEP7_WinCC</Name>
+    <EditionMain>TIAP15.1</EditionMain>
+    <DisplayName>SIMATIC STEP 7 - WinCC</DisplayName>
+    <Release>V15.01.00.04_04.01.00.01</Release>
+    <TechnVersion>V15.00.00.04</TechnVersion>
+    <DisplayVersion>V15.1 Upd99</DisplayVersion>
+  </Product>
+  <Product>
+    <Name>SCADA_SIM</Name>
+    <EditionMain>TIAP15.1</EditionMain>
+    <DisplayName>SIMATIC WinCC Runtime Professional Simulation</DisplayName>
+    <Release>V15.01.00.04_04.01.00.01</Release>
+    <TechnVersion>V15.00.00.04</TechnVersion>
+    <DisplayVersion>V15.1 Upd99</DisplayVersion>
+  </Product>
+  <Product>
+    <Name>SEBU_WinCCRTADVV11_SIM</Name>
+    <EditionMain>TIAP15.1</EditionMain>
+    <DisplayName>SIMATIC WinCC Runtime Advanced Simulation</DisplayName>
+    <Release>V15.01.00.04_04.01.00.01</Release>
+    <TechnVersion>V15.01.00.04</TechnVersion>
+    <DisplayVersion>V15.1 Upd99</DisplayVersion>
+  </Product>
+   <Product>
+    <Name>SEBU_TIAP_MULTIUSER_SERVER</Name>
+    <EditionMain>TIAP15.1</EditionMain>
+    <DisplayName>Multiuser server</DisplayName>
+    <Release>V15.01.00.04_04.01.00.01</Release>
+    <TechnVersion>V15.01.00.04</TechnVersion>
+    <DisplayVersion>V15.0 Upd99</DisplayVersion>
+  </Product>
+  <EditionMain>
+    <EditionMain>TIAP15.1</EditionMain>
+    <DisplayName>Totally Integrated Automation Portal V15.1</DisplayName>
+  </EditionMain>
+ </InventoryDS>
