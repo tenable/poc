@@ -1,7 +1,10 @@
 # Citrix SD-WAN Appliance 10.2.2 SQLi Auth Bypass and Remote Command Execution
 # Chris Lyne (@lynerc)
 # https://www.tenable.com/security/research/tra-2019-32
+# https://medium.com/tenable-techblog/an-exploit-chain-against-citrix-sd-wan-709db08fb4ac
+# https://support.citrix.com/article/CTX251987
 #
+# This code exploits both CVE-2019-12989 and CVE-2019-12991
 # You'll need your own Netcat listener
 
 import requests, urllib
