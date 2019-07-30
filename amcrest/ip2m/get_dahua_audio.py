@@ -1,7 +1,7 @@
 ##
 # Exploit Title: Unauthenticated Audio Streaming from Amcrest Camera
 # Shodan Dork: html:"@WebVersion@"
-# Date: 08/29/2019
+# Date: 07/29/2019
 # Exploit Author: Jacob Baines
 # Vendor Homepage: https://amcrest.com/
 # Software Link: https://amcrest.com/firmwaredownloads
