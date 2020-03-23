@@ -3,7 +3,7 @@
 # Date: 03/23/2020
 # Exploit Author: Jacob Baines
 # Tested on: UCM6202 1.0.18.13
-# CVE : CVE-2020-5722 (SQL injection) and CVE-2019-10662 (shell metacharacters in cgi parameters)
+# CVE : CVE-2020-5722
 # Shodan Dork: ssl:"Grandstream" "Set-Cookie: TRACKID"
 # Advisory: https://www.tenable.com/security/research/tra-2020-15
 #
