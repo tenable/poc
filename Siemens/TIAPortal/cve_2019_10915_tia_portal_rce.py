@@ -31,7 +31,7 @@ updatesrv = args.update_server
 ws = websocket.create_connection("wss://"+host+":"+port+"/socket.io/?EIO=3&transport=websocket&sid=", sslopt={"cert_reqs": ssl.CERT_NONE})
 #req = '42["cli2serv",{"moduleFunc":"ProxyModule.readProxySettings","data":"","responseEvent":" "}]'
 #req = '42["cli2serv",{"moduleFunc":"ProxyModule.saveProxyConfiguration","data":{"configType":{"key":"ProxyConfigType","defaultValue":0,"value":1},"proxyAddress":{"key":"ProxyAddress","defaultValue":"","value":"10.0.0.200"},"proxyPort":{"key":"ProxyPort","defaultValue":"","value":"8888"},"userName":{"key":"ProxyUsername","defaultValue":"","value":""},"password":{"key":"ProxyPassword","defaultValue":"","value":""}},responseEvent":" "}]'
-req = 42["cli2serv",{"moduleFunc":"SoftwareModule.saveUrlSettings","data":{"ServerUrl":"https://"+updatesrv+"/FWUpdate/","ServerSource":"CORPORATESERVER","SelectedUSBDrive":"\\","USBDrivePath":"","downloadDestinationPath":"C:\\Siemens\\TIA Admin\\DownloadCache","isMoveDownloadNewDestination":true,"CyclicCheck":false,"sourcePath":"C:\\Siemens\\TIA Admin\\DownloadCache","productionLine":"ProductionLine1","isServerChanged":true},"responseEvent":" "}]'
+req = '42["cli2serv",{"moduleFunc":"SoftwareModule.saveUrlSettings","data":{"ServerUrl":"https://"+updatesrv+"/FWUpdate/","ServerSource":"CORPORATESERVER","SelectedUSBDrive":"\\","USBDrivePath":"","downloadDestinationPath":"C:\\Siemens\\TIA Admin\\DownloadCache","isMoveDownloadNewDestination":true,"CyclicCheck":false,"sourcePath":"C:\\Siemens\\TIA Admin\\DownloadCache","productionLine":"ProductionLine1","isServerChanged":true},"responseEvent":" "}]'
 ws.send(req)
 
 result = ws.recv()
