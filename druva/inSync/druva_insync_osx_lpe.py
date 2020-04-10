@@ -7,7 +7,7 @@ import zlib,zipfile,shutil
 # Exploit Author: Chris Lyne (@lynerc)
 # Vendor Homepage: www.druva.com
 # Software Link: https://downloads.druva.com/downloads/inSync/MAC/6.5.1/inSync-6.5.1r96080.dmg
-# Version: Druva inSync Client 6.5.0 r92641
+# Version: Druva inSync Client 6.5.1 r96080
 # Tested on: Mac OS X
 # CVE : CVE-2019-4000, CVE-2019-4001
 # See Also: https://www.tenable.com/security/research/tra-2020-12
