@@ -1,0 +1,24 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+[
+	uuid(631c7d9c-1797-42f9-8e96-367a9ee58887),
+	version(1.0),
+]
+[
+	implicit_handle (handle_t my_IfHandle)
+]
+interface DefaultIfName
+{
+
+	void Proc0(
+		[in][string] wchar_t* arg_1);
+
+	long Proc1(
+		[in][string] wchar_t* arg_1);
+
+	long Proc2(
+		[in][string] wchar_t* arg_1,
+		[out]long *arg_2);
+}
