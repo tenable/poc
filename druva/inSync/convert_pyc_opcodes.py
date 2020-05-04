@@ -109,13 +109,9 @@ def convert_opcodes(code_obj_in, to_opcodes):
     # disassemble
     dis_output = capture_disassembly(code_obj_in)
     
-    #print dis_output + "\n\n\n"
-
     # parse out the instruction offsets and operation names
     instructions = parse_disassembly(dis_output)
     
-    #print instructions
-
     code_out = ''
     # we need to build a new byte string of opcodes 
     # so 
@@ -125,12 +121,6 @@ def convert_opcodes(code_obj_in, to_opcodes):
         # instruction e.g.: {offset, op_name}
         if offset in instructions:
             op_name = instructions[offset]      # get opname from dictionary
-            '''
-            print "Converting instruction " + str(offset) + " " + op_name
-            if op_name == "+":
-                print 'FOUND IT'
-                break
-            '''
             new_opcode = to_opcodes[op_name]    # grab opcode using op name
             code_out += chr(new_opcode)         # convert from int to byte
         else:
@@ -160,8 +150,6 @@ def convert_pyc_file(to_opcodes, pyc_file):
     
     return output_filename
 
-
-########### main
 if __name__ == '__main__':
 
     # note that the Python shared library (e.g. Python27.dll) must be loaded in order to disassemble the "from" opcodes 
