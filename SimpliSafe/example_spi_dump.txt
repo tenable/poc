@@ -1,0 +1,2504 @@
+
+Header for packet ID: 0
+Header Byte: 0xb0
+Access type: Read
+Burst Access: False
+Address: 0x30
+  Command Strobe - SRES - Reset chip
+
+Header for packet ID: 1
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x41
+
+Header for packet ID: 2
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 3
+Header Byte: 0x40
+Access type: Write
+Burst Access: True
+Address: 0x00
+  Regular Register IOCFG3
+    byte written (0x00) - 0x02
+
+Header for packet ID: 4
+Header Byte: 0x41
+Access type: Write
+Burst Access: True
+Address: 0x01
+  Regular Register IOCFG2
+    byte written (0x01) - 0x06
+
+Header for packet ID: 5
+Header Byte: 0x42
+Access type: Write
+Burst Access: True
+Address: 0x02
+  Regular Register IOCFG1
+    byte written (0x02) - 0xb0
+
+Header for packet ID: 6
+Header Byte: 0x43
+Access type: Write
+Burst Access: True
+Address: 0x03
+  Regular Register IOCFG0
+    byte written (0x03) - 0x40
+
+Header for packet ID: 7
+Header Byte: 0x44
+Access type: Write
+Burst Access: True
+Address: 0x04
+  Regular Register SYNC3
+    byte written (0x04) - 0x93
+
+Header for packet ID: 8
+Header Byte: 0x45
+Access type: Write
+Burst Access: True
+Address: 0x05
+  Regular Register SYNC2
+    byte written (0x05) - 0x0b
+
+Header for packet ID: 9
+Header Byte: 0x46
+Access type: Write
+Burst Access: True
+Address: 0x06
+  Regular Register SYNC1
+    byte written (0x06) - 0x51
+
+Header for packet ID: 10
+Header Byte: 0x47
+Access type: Write
+Burst Access: True
+Address: 0x07
+  Regular Register SYNC0
+    byte written (0x07) - 0xde
+
+Header for packet ID: 11
+Header Byte: 0x48
+Access type: Write
+Burst Access: True
+Address: 0x08
+  Regular Register SYNC_CFG1
+    byte written (0x08) - 0x09
+
+Header for packet ID: 12
+Header Byte: 0x49
+Access type: Write
+Burst Access: True
+Address: 0x09
+  Regular Register SYNC_CFG0
+    byte written (0x09) - 0x14
+
+Header for packet ID: 13
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x02[TOC_CFG]) - 0x4b
+
+Header for packet ID: 14
+Header Byte: 0x4a
+Access type: Write
+Burst Access: True
+Address: 0x0a
+  Regular Register DEVIATION_M
+    byte written (0x0a) - 0xaa
+
+Header for packet ID: 15
+Header Byte: 0x4b
+Access type: Write
+Burst Access: True
+Address: 0x0b
+  Regular Register MODCFG_DEV_E
+    byte written (0x0b) - 0x04
+
+Header for packet ID: 16
+Header Byte: 0x4c
+Access type: Write
+Burst Access: True
+Address: 0x0c
+  Regular Register DCFILT_CFG
+    byte written (0x0c) - 0x15
+
+Header for packet ID: 17
+Header Byte: 0x4d
+Access type: Write
+Burst Access: True
+Address: 0x0d
+  Regular Register PREAMBLE_CFG1
+    byte written (0x0d) - 0x18
+
+Header for packet ID: 18
+Header Byte: 0x4e
+Access type: Write
+Burst Access: True
+Address: 0x0e
+  Regular Register PREAMBLE_CFG0
+    byte written (0x0e) - 0x2a
+
+Header for packet ID: 19
+Header Byte: 0x4f
+Access type: Write
+Burst Access: True
+Address: 0x0f
+  Regular Register FREQ_IF_CFG
+    byte written (0x0f) - 0x3a
+
+Header for packet ID: 20
+Header Byte: 0x50
+Access type: Write
+Burst Access: True
+Address: 0x10
+  Regular Register IQIC
+    byte written (0x10) - 0x00
+
+Header for packet ID: 21
+Header Byte: 0x51
+Access type: Write
+Burst Access: True
+Address: 0x11
+  Regular Register CHAN_BW
+    byte written (0x11) - 0x03
+
+Header for packet ID: 22
+Header Byte: 0x52
+Access type: Write
+Burst Access: True
+Address: 0x12
+  Regular Register MDMCFG1
+    byte written (0x12) - 0x46
+
+Header for packet ID: 23
+Header Byte: 0x53
+Access type: Write
+Burst Access: True
+Address: 0x13
+  Regular Register MDMCFG0
+    byte written (0x13) - 0x05
+
+Header for packet ID: 24
+Header Byte: 0x54
+Access type: Write
+Burst Access: True
+Address: 0x14
+  Regular Register SYMBOL_RATE2
+    byte written (0x14) - 0x63
+
+Header for packet ID: 25
+Header Byte: 0x55
+Access type: Write
+Burst Access: True
+Address: 0x15
+  Regular Register SYMBOL_RATE1
+    byte written (0x15) - 0xa9
+
+Header for packet ID: 26
+Header Byte: 0x56
+Access type: Write
+Burst Access: True
+Address: 0x16
+  Regular Register SYMBOL_RATE0
+    byte written (0x16) - 0x2a
+
+Header for packet ID: 27
+Header Byte: 0x57
+Access type: Write
+Burst Access: True
+Address: 0x17
+  Regular Register AGC_REF
+    byte written (0x17) - 0x3c
+
+Header for packet ID: 28
+Header Byte: 0x58
+Access type: Write
+Burst Access: True
+Address: 0x18
+  Regular Register AGC_CS_THR
+    byte written (0x18) - 0xf8
+
+Header for packet ID: 29
+Header Byte: 0x59
+Access type: Write
+Burst Access: True
+Address: 0x19
+  Regular Register AGC_GAIN_ADJUST
+    byte written (0x19) - 0x00
+
+Header for packet ID: 30
+Header Byte: 0x5a
+Access type: Write
+Burst Access: True
+Address: 0x1a
+  Regular Register AGC_CFG3
+    byte written (0x1a) - 0x91
+
+Header for packet ID: 31
+Header Byte: 0x5b
+Access type: Write
+Burst Access: True
+Address: 0x1b
+  Regular Register AGC_CFG2
+    byte written (0x1b) - 0x20
+
+Header for packet ID: 32
+Header Byte: 0x5c
+Access type: Write
+Burst Access: True
+Address: 0x1c
+  Regular Register AGC_CFG1
+    byte written (0x1c) - 0xa9
+
+Header for packet ID: 33
+Header Byte: 0x5d
+Access type: Write
+Burst Access: True
+Address: 0x1d
+  Regular Register AGC_CFG0
+    byte written (0x1d) - 0xc0
+
+Header for packet ID: 34
+Header Byte: 0x5e
+Access type: Write
+Burst Access: True
+Address: 0x1e
+  Regular Register FIFO_CFG
+    byte written (0x1e) - 0x46
+
+Header for packet ID: 35
+Header Byte: 0x5f
+Access type: Write
+Burst Access: True
+Address: 0x1f
+  Regular Register DEV_ADDR
+    byte written (0x1f) - 0x00
+
+Header for packet ID: 36
+Header Byte: 0x60
+Access type: Write
+Burst Access: True
+Address: 0x20
+  Regular Register SETTLING_CFG
+    byte written (0x20) - 0x0b
+
+Header for packet ID: 37
+Header Byte: 0x61
+Access type: Write
+Burst Access: True
+Address: 0x21
+  Regular Register FS_CFG
+    byte written (0x21) - 0x14
+
+Header for packet ID: 38
+Header Byte: 0x62
+Access type: Write
+Burst Access: True
+Address: 0x22
+  Regular Register WOR_CFG1
+    byte written (0x22) - 0x08
+
+Header for packet ID: 39
+Header Byte: 0x63
+Access type: Write
+Burst Access: True
+Address: 0x23
+  Regular Register WOR_CFG0
+    byte written (0x23) - 0x21
+
+Header for packet ID: 40
+Header Byte: 0x64
+Access type: Write
+Burst Access: True
+Address: 0x24
+  Regular Register WOR_EVENT0_MSB
+    byte written (0x24) - 0x00
+
+Header for packet ID: 41
+Header Byte: 0x65
+Access type: Write
+Burst Access: True
+Address: 0x25
+  Regular Register WOR_EVENT0_LSB
+    byte written (0x25) - 0x00
+
+Header for packet ID: 42
+Header Byte: 0x66
+Access type: Write
+Burst Access: True
+Address: 0x26
+  Regular Register PKT_CFG2
+    byte written (0x26) - 0x04
+
+Header for packet ID: 43
+Header Byte: 0x67
+Access type: Write
+Burst Access: True
+Address: 0x27
+  Regular Register PKT_CFG1
+    byte written (0x27) - 0x05
+
+Header for packet ID: 44
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x20
+
+Header for packet ID: 45
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x00[IF_MIX_CFG]) - 0x80
+
+Header for packet ID: 46
+Header Byte: 0x69
+Access type: Write
+Burst Access: True
+Address: 0x29
+  Regular Register RFEND_CFG1
+    byte written (0x29) - 0x0f
+
+Header for packet ID: 47
+Header Byte: 0x6a
+Access type: Write
+Burst Access: True
+Address: 0x2a
+  Regular Register RFEND_CFG0
+    byte written (0x2a) - 0x00
+
+Header for packet ID: 48
+Header Byte: 0x6b
+Access type: Write
+Burst Access: True
+Address: 0x2b
+  Regular Register PA_CFG2
+    byte written (0x2b) - 0x34
+
+Header for packet ID: 49
+Header Byte: 0x6c
+Access type: Write
+Burst Access: True
+Address: 0x2c
+  Regular Register PA_CFG1
+    byte written (0x2c) - 0x56
+
+Header for packet ID: 50
+Header Byte: 0x6d
+Access type: Write
+Burst Access: True
+Address: 0x2d
+  Regular Register PA_CFG0
+    byte written (0x2d) - 0x7e
+
+Header for packet ID: 51
+Header Byte: 0x6e
+Access type: Write
+Burst Access: True
+Address: 0x2e
+  Regular Register PKT_LEN
+    byte written (0x2e) - 0xff
+
+Header for packet ID: 52
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x00[IF_MIX_CFG]) - 0x00
+
+Header for packet ID: 53
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x01[FREQOFF_CFG]) - 0x30
+
+Header for packet ID: 54
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 55
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x7a
+
+Header for packet ID: 56
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 57
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x12[FS_DIG1]) - 0x00
+
+Header for packet ID: 58
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x13[FS_DIG0]) - 0x5f
+
+Header for packet ID: 59
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x16[FS_CAL1]) - 0x40
+
+Header for packet ID: 60
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x17[FS_CAL0]) - 0x0e
+
+Header for packet ID: 61
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x19[FS_DIVTWO]) - 0x03
+
+Header for packet ID: 62
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x1b[FS_DSM0]) - 0x33
+
+Header for packet ID: 63
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x1d[FS_DVC0]) - 0x17
+
+Header for packet ID: 64
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x1f[FS_PFD]) - 0x50
+
+Header for packet ID: 65
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x20[FS_PRE]) - 0x6e
+
+Header for packet ID: 66
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x21[FS_REG_DIV_CML]) - 0x14
+
+Header for packet ID: 67
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x22[FS_SPARE]) - 0xac
+
+Header for packet ID: 68
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x27[FS_VCO0]) - 0xb4
+
+Header for packet ID: 69
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x32[XOSC5]) - 0x0e
+
+Header for packet ID: 70
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x36[XOSC1]) - 0x03
+
+Header for packet ID: 71
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 72
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 73
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x7a
+
+Header for packet ID: 74
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 75
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 76
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x41
+
+Header for packet ID: 77
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x25[FS_VCO2]) - 0x00
+
+Header for packet ID: 78
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x15[FS_CAL2]) - 0x20
+
+Header for packet ID: 79
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x15[FS_CAL2]) - 0x22
+
+Header for packet ID: 80
+Header Byte: 0xb3
+Access type: Read
+Burst Access: False
+Address: 0x33
+  Command Strobe - SCAL - Calibrate frequency synthesizer and turn it off.
+
+Header for packet ID: 81
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x04
+
+Header for packet ID: 82
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x41
+
+Header for packet ID: 83
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x25[FS_VCO2]) - 0x48
+
+Header for packet ID: 84
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x23[FS_VCO4]) - 0x11
+
+Header for packet ID: 85
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x18[FS_CHP]) - 0x29
+
+Header for packet ID: 86
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x25[FS_VCO2]) - 0x00
+
+Header for packet ID: 87
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x15[FS_CAL2]) - 0x20
+
+Header for packet ID: 88
+Header Byte: 0xb3
+Access type: Read
+Burst Access: False
+Address: 0x33
+  Command Strobe - SCAL - Calibrate frequency synthesizer and turn it off.
+
+Header for packet ID: 89
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x04
+
+Header for packet ID: 90
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x41
+
+Header for packet ID: 91
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x25[FS_VCO2]) - 0x48
+
+Header for packet ID: 92
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x23[FS_VCO4]) - 0x11
+
+Header for packet ID: 93
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x18[FS_CHP]) - 0x28
+
+Header for packet ID: 94
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x25[FS_VCO2]) - 0x48
+
+Header for packet ID: 95
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x23[FS_VCO4]) - 0x11
+
+Header for packet ID: 96
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x18[FS_CHP]) - 0x28
+
+Header for packet ID: 97
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x33[XOSC4]) - 0x41
+
+Header for packet ID: 98
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0a[FREQOFF1]) - 0x00
+
+Header for packet ID: 99
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0b[FREQOFF0]) - 0xde
+
+Header for packet ID: 100
+Header Byte: 0xba
+Access type: Read
+Burst Access: False
+Address: 0x3a
+  Command Strobe - SFRX - Flush the RX FIFO.
+
+Header for packet ID: 101
+Header Byte: 0xb4
+Access type: Read
+Burst Access: False
+Address: 0x34
+  Command Strobe - SRX - Enable RX
+
+Header for packet ID: 102
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xc4
+
+Header for packet ID: 103
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xdc
+
+Header for packet ID: 104
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xc9
+
+Header for packet ID: 105
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0x9c
+
+Header for packet ID: 106
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0x87
+
+Header for packet ID: 107
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xf0
+
+Header for packet ID: 108
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xbb
+
+Header for packet ID: 109
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0x88
+
+Header for packet ID: 110
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0x89
+
+Header for packet ID: 111
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xa6
+
+Header for packet ID: 112
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xb3
+
+Header for packet ID: 113
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xd3
+
+Header for packet ID: 114
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xe6
+
+Header for packet ID: 115
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xe3
+
+Header for packet ID: 116
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xbb
+
+Header for packet ID: 117
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x00[IF_MIX_CFG]) - 0xc6
+
+Header for packet ID: 118
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 119
+Header Byte: 0x40
+Access type: Write
+Burst Access: True
+Address: 0x00
+  Regular Register IOCFG3
+    byte written (0x00) - 0x02
+
+Header for packet ID: 120
+Header Byte: 0x41
+Access type: Write
+Burst Access: True
+Address: 0x01
+  Regular Register IOCFG2
+    byte written (0x01) - 0x59
+
+Header for packet ID: 121
+Header Byte: 0x43
+Access type: Write
+Burst Access: True
+Address: 0x03
+  Regular Register IOCFG0
+    byte written (0x03) - 0x40
+
+Header for packet ID: 122
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 123
+Header Byte: 0x49
+Access type: Write
+Burst Access: True
+Address: 0x09
+  Regular Register SYNC_CFG0
+    byte written (0x09) - 0x03
+
+Header for packet ID: 124
+Header Byte: 0x4d
+Access type: Write
+Burst Access: True
+Address: 0x0d
+  Regular Register PREAMBLE_CFG1
+    byte written (0x0d) - 0x00
+
+Header for packet ID: 125
+Header Byte: 0x67
+Access type: Write
+Burst Access: True
+Address: 0x27
+  Regular Register PKT_CFG1
+    byte written (0x27) - 0x01
+
+Header for packet ID: 126
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x40
+
+Header for packet ID: 127
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 128
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 129
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x5a
+
+Header for packet ID: 130
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 131
+Header Byte: 0x6e
+Access type: Write
+Burst Access: True
+Address: 0x2e
+  Regular Register PKT_LEN
+    byte written (0x2e) - 0x2b
+
+Header for packet ID: 132
+Header Byte: 0xba
+Access type: Read
+Burst Access: False
+Address: 0x3a
+  Command Strobe - SFRX - Flush the RX FIFO.
+
+Header for packet ID: 133
+Header Byte: 0xbb
+Access type: Read
+Burst Access: False
+Address: 0x3b
+  Command Strobe - SFTX - Flush the TX FIFO
+
+Header for packet ID: 134
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0xaa
+    byte written (0x6f) - 0xaa
+    byte written (0x70) - 0xaa
+    byte written (0x71) - 0xaa
+    byte written (0x72) - 0xaa
+    byte written (0x73) - 0xaa
+    byte written (0x74) - 0xaa
+    byte written (0x75) - 0xaa
+    byte written (0x76) - 0xaa
+    byte written (0x77) - 0xaa
+    byte written (0x78) - 0xaa
+    byte written (0x79) - 0xaa
+    byte written (0x7a) - 0xaa
+    byte written (0x7b) - 0xaa
+    byte written (0x7c) - 0xaa
+    byte written (0x7d) - 0xaa
+    byte written (0x7e) - 0xaa
+    byte written (0x7f) - 0xaa
+    byte written (0x80) - 0xaa
+    byte written (0x81) - 0xaa
+    byte written (0x82) - 0xaa
+    byte written (0x83) - 0xaa
+    byte written (0x84) - 0xaa
+    byte written (0x85) - 0xaa
+    byte written (0x86) - 0xaa
+    byte written (0x87) - 0xaa
+    byte written (0x88) - 0xaa
+    byte written (0x89) - 0xaa
+    byte written (0x8a) - 0xaa
+    byte written (0x8b) - 0xaa
+    byte written (0x8c) - 0xaa
+    byte written (0x8d) - 0xaa
+    byte written (0x8e) - 0xaa
+    byte written (0x8f) - 0xaa
+    byte written (0x90) - 0xaa
+    byte written (0x91) - 0xaa
+    byte written (0x92) - 0xaa
+    byte written (0x93) - 0xaa
+    byte written (0x94) - 0xaa
+    byte written (0x95) - 0xaa
+    byte written (0x96) - 0xaa
+    byte written (0x97) - 0xaa
+    byte written (0x98) - 0xaa
+    byte written (0x99) - 0xaa
+    byte written (0x9a) - 0xaa
+    byte written (0x9b) - 0xaa
+    byte written (0x9c) - 0xaa
+    byte written (0x9d) - 0xaa
+    byte written (0x9e) - 0xaa
+    byte written (0x9f) - 0xaa
+    byte written (0xa0) - 0xaa
+    byte written (0xa1) - 0xaa
+    byte written (0xa2) - 0xaa
+    byte written (0xa3) - 0xaa
+    byte written (0xa4) - 0xaa
+    byte written (0xa5) - 0xaa
+    byte written (0xa6) - 0xaa
+    byte written (0xa7) - 0xaa
+    byte written (0xa8) - 0xaa
+    byte written (0xa9) - 0xaa
+    byte written (0xaa) - 0xaa
+    byte written (0xab) - 0xaa
+    byte written (0xac) - 0xaa
+    byte written (0xad) - 0xaa
+    byte written (0xae) - 0xaa
+    byte written (0xaf) - 0xaa
+    byte written (0xb0) - 0xaa
+    byte written (0xb1) - 0xaa
+    byte written (0xb2) - 0xaa
+    byte written (0xb3) - 0xaa
+    byte written (0xb4) - 0xaa
+    byte written (0xb5) - 0xaa
+    byte written (0xb6) - 0xaa
+    byte written (0xb7) - 0xaa
+    byte written (0xb8) - 0xaa
+    byte written (0xb9) - 0xaa
+    byte written (0xba) - 0xaa
+    byte written (0xbb) - 0xaa
+    byte written (0xbc) - 0xaa
+    byte written (0xbd) - 0xaa
+    byte written (0xbe) - 0xaa
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Header for packet ID: 135
+Header Byte: 0xb5
+Access type: Read
+Burst Access: False
+Address: 0x35
+  Command Strobe - STX - In IDLE state: Enable TX
+
+Header for packet ID: 136
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0xaa
+    byte written (0x6f) - 0xaa
+    byte written (0x70) - 0xaa
+    byte written (0x71) - 0xaa
+    byte written (0x72) - 0xaa
+    byte written (0x73) - 0xaa
+    byte written (0x74) - 0xaa
+    byte written (0x75) - 0xaa
+    byte written (0x76) - 0xaa
+    byte written (0x77) - 0xaa
+    byte written (0x78) - 0xaa
+    byte written (0x79) - 0xaa
+    byte written (0x7a) - 0xaa
+    byte written (0x7b) - 0xaa
+    byte written (0x7c) - 0xaa
+    byte written (0x7d) - 0xaa
+    byte written (0x7e) - 0xaa
+    byte written (0x7f) - 0xaa
+    byte written (0x80) - 0xaa
+    byte written (0x81) - 0xaa
+    byte written (0x82) - 0xaa
+    byte written (0x83) - 0xaa
+    byte written (0x84) - 0xaa
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Header for packet ID: 137
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x00
+
+Header for packet ID: 138
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0x93
+    byte written (0x6f) - 0x0b
+    byte written (0x70) - 0x51
+    byte written (0x71) - 0xde
+    byte written (0x72) - 0x2f
+    byte written (0x73) - 0x01
+    byte written (0x74) - 0x88
+    byte written (0x75) - 0xe1
+    byte written (0x76) - 0x3a
+    byte written (0x77) - 0x94
+    byte written (0x78) - 0x70
+    byte written (0x79) - 0x17
+    byte written (0x7a) - 0x00
+    byte written (0x7b) - 0x3e
+    byte written (0x7c) - 0xa3
+    byte written (0x7d) - 0xa3
+    byte written (0x7e) - 0x4b
+    byte written (0x7f) - 0xab
+    byte written (0x80) - 0x4f
+    byte written (0x81) - 0x2d
+    byte written (0x82) - 0x75
+    byte written (0x83) - 0x59
+    byte written (0x84) - 0x45
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa930b51de2f0188e13a947017003ea3a34bab4f2d755945
+
+Header for packet ID: 139
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xb5
+    byte written (0x40) - 0xb0
+    byte written (0x41) - 0x6c
+    byte written (0x42) - 0x6d
+    byte written (0x43) - 0x70
+    byte written (0x44) - 0x85
+    byte written (0x45) - 0x1e
+    byte written (0x46) - 0x2e
+    byte written (0x47) - 0xce
+    byte written (0x48) - 0xee
+    byte written (0x49) - 0xda
+    byte written (0x4a) - 0x33
+    byte written (0x4b) - 0xca
+    byte written (0x4c) - 0xf5
+    byte written (0x4d) - 0x30
+    byte written (0x4e) - 0xeb
+    byte written (0x4f) - 0xf0
+    byte written (0x50) - 0x5c
+    byte written (0x51) - 0x98
+    byte written (0x52) - 0xbf
+    byte written (0x53) - 0xd1
+    byte written (0x54) - 0xe8
+    byte written (0x55) - 0x04
+    byte written (0x56) - 0x12
+    byte written (0x57) - 0xcc
+    byte written (0x58) - 0x88
+    byte written (0x59) - 0x51
+    byte written (0x5a) - 0x07
+    byte written (0x5b) - 0x36
+    byte written (0x5c) - 0x31
+    byte written (0x5d) - 0xd1
+fifo content: b5b06c6d70851e2eceeeda33caf530ebf05c98bfd1e80412cc8851073631d1
+
+Header for packet ID: 140
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xfb
+
+Header for packet ID: 141
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 142
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 143
+Header Byte: 0x40
+Access type: Write
+Burst Access: True
+Address: 0x00
+  Regular Register IOCFG3
+    byte written (0x00) - 0x02
+
+Header for packet ID: 144
+Header Byte: 0x41
+Access type: Write
+Burst Access: True
+Address: 0x01
+  Regular Register IOCFG2
+    byte written (0x01) - 0x06
+
+Header for packet ID: 145
+Header Byte: 0x43
+Access type: Write
+Burst Access: True
+Address: 0x03
+  Regular Register IOCFG0
+    byte written (0x03) - 0x40
+
+Header for packet ID: 146
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 147
+Header Byte: 0x49
+Access type: Write
+Burst Access: True
+Address: 0x09
+  Regular Register SYNC_CFG0
+    byte written (0x09) - 0x17
+
+Header for packet ID: 148
+Header Byte: 0x4d
+Access type: Write
+Burst Access: True
+Address: 0x0d
+  Regular Register PREAMBLE_CFG1
+    byte written (0x0d) - 0x18
+
+Header for packet ID: 149
+Header Byte: 0x67
+Access type: Write
+Burst Access: True
+Address: 0x27
+  Regular Register PKT_CFG1
+    byte written (0x27) - 0x05
+
+Header for packet ID: 150
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x20
+
+Header for packet ID: 151
+Header Byte: 0x6e
+Access type: Write
+Burst Access: True
+Address: 0x2e
+  Regular Register PKT_LEN
+    byte written (0x2e) - 0xff
+
+Header for packet ID: 152
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 153
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 154
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x7a
+
+Header for packet ID: 155
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 156
+Header Byte: 0xba
+Access type: Read
+Burst Access: False
+Address: 0x3a
+  Command Strobe - SFRX - Flush the RX FIFO.
+
+Header for packet ID: 157
+Header Byte: 0xb4
+Access type: Read
+Burst Access: False
+Address: 0x34
+  Command Strobe - SRX - Enable RX
+
+Header for packet ID: 158
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 159
+Header Byte: 0x40
+Access type: Write
+Burst Access: True
+Address: 0x00
+  Regular Register IOCFG3
+    byte written (0x00) - 0x02
+
+Header for packet ID: 160
+Header Byte: 0x41
+Access type: Write
+Burst Access: True
+Address: 0x01
+  Regular Register IOCFG2
+    byte written (0x01) - 0x59
+
+Header for packet ID: 161
+Header Byte: 0x43
+Access type: Write
+Burst Access: True
+Address: 0x03
+  Regular Register IOCFG0
+    byte written (0x03) - 0x40
+
+Header for packet ID: 162
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 163
+Header Byte: 0x49
+Access type: Write
+Burst Access: True
+Address: 0x09
+  Regular Register SYNC_CFG0
+    byte written (0x09) - 0x03
+
+Header for packet ID: 164
+Header Byte: 0x4d
+Access type: Write
+Burst Access: True
+Address: 0x0d
+  Regular Register PREAMBLE_CFG1
+    byte written (0x0d) - 0x00
+
+Header for packet ID: 165
+Header Byte: 0x67
+Access type: Write
+Burst Access: True
+Address: 0x27
+  Regular Register PKT_CFG1
+    byte written (0x27) - 0x01
+
+Header for packet ID: 166
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x40
+
+Header for packet ID: 167
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 168
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 169
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x5a
+
+Header for packet ID: 170
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 171
+Header Byte: 0x6e
+Access type: Write
+Burst Access: True
+Address: 0x2e
+  Regular Register PKT_LEN
+    byte written (0x2e) - 0x2b
+
+Header for packet ID: 172
+Header Byte: 0xba
+Access type: Read
+Burst Access: False
+Address: 0x3a
+  Command Strobe - SFRX - Flush the RX FIFO.
+
+Header for packet ID: 173
+Header Byte: 0xbb
+Access type: Read
+Burst Access: False
+Address: 0x3b
+  Command Strobe - SFTX - Flush the TX FIFO
+
+Header for packet ID: 174
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0xaa
+    byte written (0x6f) - 0xaa
+    byte written (0x70) - 0xaa
+    byte written (0x71) - 0xaa
+    byte written (0x72) - 0xaa
+    byte written (0x73) - 0xaa
+    byte written (0x74) - 0xaa
+    byte written (0x75) - 0xaa
+    byte written (0x76) - 0xaa
+    byte written (0x77) - 0xaa
+    byte written (0x78) - 0xaa
+    byte written (0x79) - 0xaa
+    byte written (0x7a) - 0xaa
+    byte written (0x7b) - 0xaa
+    byte written (0x7c) - 0xaa
+    byte written (0x7d) - 0xaa
+    byte written (0x7e) - 0xaa
+    byte written (0x7f) - 0xaa
+    byte written (0x80) - 0xaa
+    byte written (0x81) - 0xaa
+    byte written (0x82) - 0xaa
+    byte written (0x83) - 0xaa
+    byte written (0x84) - 0xaa
+    byte written (0x85) - 0xaa
+    byte written (0x86) - 0xaa
+    byte written (0x87) - 0xaa
+    byte written (0x88) - 0xaa
+    byte written (0x89) - 0xaa
+    byte written (0x8a) - 0xaa
+    byte written (0x8b) - 0xaa
+    byte written (0x8c) - 0xaa
+    byte written (0x8d) - 0xaa
+    byte written (0x8e) - 0xaa
+    byte written (0x8f) - 0xaa
+    byte written (0x90) - 0xaa
+    byte written (0x91) - 0xaa
+    byte written (0x92) - 0xaa
+    byte written (0x93) - 0xaa
+    byte written (0x94) - 0xaa
+    byte written (0x95) - 0xaa
+    byte written (0x96) - 0xaa
+    byte written (0x97) - 0xaa
+    byte written (0x98) - 0xaa
+    byte written (0x99) - 0xaa
+    byte written (0x9a) - 0xaa
+    byte written (0x9b) - 0xaa
+    byte written (0x9c) - 0xaa
+    byte written (0x9d) - 0xaa
+    byte written (0x9e) - 0xaa
+    byte written (0x9f) - 0xaa
+    byte written (0xa0) - 0xaa
+    byte written (0xa1) - 0xaa
+    byte written (0xa2) - 0xaa
+    byte written (0xa3) - 0xaa
+    byte written (0xa4) - 0xaa
+    byte written (0xa5) - 0xaa
+    byte written (0xa6) - 0xaa
+    byte written (0xa7) - 0xaa
+    byte written (0xa8) - 0xaa
+    byte written (0xa9) - 0xaa
+    byte written (0xaa) - 0xaa
+    byte written (0xab) - 0xaa
+    byte written (0xac) - 0xaa
+    byte written (0xad) - 0xaa
+    byte written (0xae) - 0xaa
+    byte written (0xaf) - 0xaa
+    byte written (0xb0) - 0xaa
+    byte written (0xb1) - 0xaa
+    byte written (0xb2) - 0xaa
+    byte written (0xb3) - 0xaa
+    byte written (0xb4) - 0xaa
+    byte written (0xb5) - 0xaa
+    byte written (0xb6) - 0xaa
+    byte written (0xb7) - 0xaa
+    byte written (0xb8) - 0xaa
+    byte written (0xb9) - 0xaa
+    byte written (0xba) - 0xaa
+    byte written (0xbb) - 0xaa
+    byte written (0xbc) - 0xaa
+    byte written (0xbd) - 0xaa
+    byte written (0xbe) - 0xaa
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Header for packet ID: 175
+Header Byte: 0xb5
+Access type: Read
+Burst Access: False
+Address: 0x35
+  Command Strobe - STX - In IDLE state: Enable TX
+
+Header for packet ID: 176
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf9
+
+Header for packet ID: 177
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 178
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0xaa
+    byte written (0x6f) - 0xaa
+    byte written (0x70) - 0xaa
+    byte written (0x71) - 0xaa
+    byte written (0x72) - 0xaa
+    byte written (0x73) - 0xaa
+    byte written (0x74) - 0xaa
+    byte written (0x75) - 0xaa
+    byte written (0x76) - 0xaa
+    byte written (0x77) - 0xaa
+    byte written (0x78) - 0xaa
+    byte written (0x79) - 0xaa
+    byte written (0x7a) - 0xaa
+    byte written (0x7b) - 0xaa
+    byte written (0x7c) - 0xaa
+    byte written (0x7d) - 0xaa
+    byte written (0x7e) - 0xaa
+    byte written (0x7f) - 0xaa
+    byte written (0x80) - 0xaa
+    byte written (0x81) - 0xaa
+    byte written (0x82) - 0xaa
+    byte written (0x83) - 0xaa
+    byte written (0x84) - 0xaa
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Header for packet ID: 179
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x00
+
+Header for packet ID: 180
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xaa
+    byte written (0x40) - 0xaa
+    byte written (0x41) - 0xaa
+    byte written (0x42) - 0xaa
+    byte written (0x43) - 0xaa
+    byte written (0x44) - 0xaa
+    byte written (0x45) - 0xaa
+    byte written (0x46) - 0xaa
+    byte written (0x47) - 0xaa
+    byte written (0x48) - 0xaa
+    byte written (0x49) - 0xaa
+    byte written (0x4a) - 0xaa
+    byte written (0x4b) - 0xaa
+    byte written (0x4c) - 0xaa
+    byte written (0x4d) - 0xaa
+    byte written (0x4e) - 0xaa
+    byte written (0x4f) - 0xaa
+    byte written (0x50) - 0xaa
+    byte written (0x51) - 0xaa
+    byte written (0x52) - 0xaa
+    byte written (0x53) - 0xaa
+    byte written (0x54) - 0xaa
+    byte written (0x55) - 0xaa
+    byte written (0x56) - 0xaa
+    byte written (0x57) - 0xaa
+    byte written (0x58) - 0xaa
+    byte written (0x59) - 0xaa
+    byte written (0x5a) - 0xaa
+    byte written (0x5b) - 0xaa
+    byte written (0x5c) - 0xaa
+    byte written (0x5d) - 0xaa
+    byte written (0x5e) - 0xaa
+    byte written (0x5f) - 0xaa
+    byte written (0x60) - 0xaa
+    byte written (0x61) - 0xaa
+    byte written (0x62) - 0xaa
+    byte written (0x63) - 0xaa
+    byte written (0x64) - 0xaa
+    byte written (0x65) - 0xaa
+    byte written (0x66) - 0xaa
+    byte written (0x67) - 0xaa
+    byte written (0x68) - 0xaa
+    byte written (0x69) - 0xaa
+    byte written (0x6a) - 0xaa
+    byte written (0x6b) - 0xaa
+    byte written (0x6c) - 0xaa
+    byte written (0x6d) - 0xaa
+    byte written (0x6e) - 0x93
+    byte written (0x6f) - 0x0b
+    byte written (0x70) - 0x51
+    byte written (0x71) - 0xde
+    byte written (0x72) - 0x2f
+    byte written (0x73) - 0x01
+    byte written (0x74) - 0x88
+    byte written (0x75) - 0xe1
+    byte written (0x76) - 0x3a
+    byte written (0x77) - 0x94
+    byte written (0x78) - 0x70
+    byte written (0x79) - 0x17
+    byte written (0x7a) - 0x00
+    byte written (0x7b) - 0x3e
+    byte written (0x7c) - 0xa3
+    byte written (0x7d) - 0xa3
+    byte written (0x7e) - 0x4b
+    byte written (0x7f) - 0xab
+    byte written (0x80) - 0x4f
+    byte written (0x81) - 0x2d
+    byte written (0x82) - 0x75
+    byte written (0x83) - 0x59
+    byte written (0x84) - 0x45
+fifo content: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa930b51de2f0188e13a947017003ea3a34bab4f2d755945
+
+Header for packet ID: 181
+Header Byte: 0x7f
+Access type: Write
+Burst Access: True
+Address: 0x3f
+  Standard FIFO Access
+    byte written (0x3f) - 0xb5
+    byte written (0x40) - 0xb0
+    byte written (0x41) - 0x6c
+    byte written (0x42) - 0x6d
+    byte written (0x43) - 0x70
+    byte written (0x44) - 0x85
+    byte written (0x45) - 0x1e
+    byte written (0x46) - 0x2e
+    byte written (0x47) - 0xce
+    byte written (0x48) - 0xee
+    byte written (0x49) - 0xda
+    byte written (0x4a) - 0x33
+    byte written (0x4b) - 0xca
+    byte written (0x4c) - 0xf5
+    byte written (0x4d) - 0x30
+    byte written (0x4e) - 0xeb
+    byte written (0x4f) - 0xf0
+    byte written (0x50) - 0x5c
+    byte written (0x51) - 0x98
+    byte written (0x52) - 0xbf
+    byte written (0x53) - 0xd1
+    byte written (0x54) - 0xe8
+    byte written (0x55) - 0x04
+    byte written (0x56) - 0x12
+    byte written (0x57) - 0xcc
+    byte written (0x58) - 0x88
+    byte written (0x59) - 0x51
+    byte written (0x5a) - 0x07
+    byte written (0x5b) - 0x36
+    byte written (0x5c) - 0x31
+    byte written (0x5d) - 0xd1
+fifo content: b5b06c6d70851e2eceeeda33caf530ebf05c98bfd1e80412cc8851073631d1
+
+Header for packet ID: 182
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 183
+Header Byte: 0x40
+Access type: Write
+Burst Access: True
+Address: 0x00
+  Regular Register IOCFG3
+    byte written (0x00) - 0x02
+
+Header for packet ID: 184
+Header Byte: 0x41
+Access type: Write
+Burst Access: True
+Address: 0x01
+  Regular Register IOCFG2
+    byte written (0x01) - 0x06
+
+Header for packet ID: 185
+Header Byte: 0x43
+Access type: Write
+Burst Access: True
+Address: 0x03
+  Regular Register IOCFG0
+    byte written (0x03) - 0x40
+
+Header for packet ID: 186
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 187
+Header Byte: 0x49
+Access type: Write
+Burst Access: True
+Address: 0x09
+  Regular Register SYNC_CFG0
+    byte written (0x09) - 0x17
+
+Header for packet ID: 188
+Header Byte: 0x4d
+Access type: Write
+Burst Access: True
+Address: 0x0d
+  Regular Register PREAMBLE_CFG1
+    byte written (0x0d) - 0x18
+
+Header for packet ID: 189
+Header Byte: 0x67
+Access type: Write
+Burst Access: True
+Address: 0x27
+  Regular Register PKT_CFG1
+    byte written (0x27) - 0x05
+
+Header for packet ID: 190
+Header Byte: 0x68
+Access type: Write
+Burst Access: True
+Address: 0x28
+  Regular Register PKT_CFG0
+    byte written (0x28) - 0x20
+
+Header for packet ID: 191
+Header Byte: 0x6e
+Access type: Write
+Burst Access: True
+Address: 0x2e
+  Regular Register PKT_LEN
+    byte written (0x2e) - 0xff
+
+Header for packet ID: 192
+Header Byte: 0xb6
+Access type: Read
+Burst Access: False
+Address: 0x36
+  Command Strobe - SIDLE - Exit RX/TX, turn off frequency synthesizer and exit eWOR mode if applicable
+
+Header for packet ID: 193
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0c[FREQ2]) - 0x6c
+
+Header for packet ID: 194
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0d[FREQ1]) - 0x7a
+
+Header for packet ID: 195
+Header Byte: 0x6f
+Access type: Write
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte written (0x0e[FREQ0]) - 0xe1
+
+Header for packet ID: 196
+Header Byte: 0xba
+Access type: Read
+Burst Access: False
+Address: 0x3a
+  Command Strobe - SFRX - Flush the RX FIFO.
+
+Header for packet ID: 197
+Header Byte: 0xb4
+Access type: Read
+Burst Access: False
+Address: 0x34
+  Command Strobe - SRX - Enable RX
+
+Header for packet ID: 198
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf7
+
+Header for packet ID: 199
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 200
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf8
+
+Header for packet ID: 201
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 202
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf7
+
+Header for packet ID: 203
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 204
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf9
+
+Header for packet ID: 205
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 206
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf8
+
+Header for packet ID: 207
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 208
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf9
+
+Header for packet ID: 209
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 210
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf7
+
+Header for packet ID: 211
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 212
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf5
+
+Header for packet ID: 213
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x43
+
+Header for packet ID: 214
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xfb
+
+Header for packet ID: 215
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Header for packet ID: 216
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x31[RXMIX]) - 0xf7
+
+Header for packet ID: 217
+Header Byte: 0xef
+Access type: Read
+Burst Access: True
+Address: 0x2f
+  Extended Register
+    byte read    (0x32[XOSC5]) - 0x47
+
+Regular registers:
+
++---------+-----------------+-----------+---------+----------+
+| Address |      Name       | Hex Value | Decimal |  Binary  |
++=========+=================+===========+=========+==========+
+| 0x00    | IOCFG3          | 0x02      | 2       | 10       |
++---------+-----------------+-----------+---------+----------+
+| 0x01    | IOCFG2          | 0x06      | 6       | 110      |
++---------+-----------------+-----------+---------+----------+
+| 0x02    | IOCFG1          | 0xb0      | 176     | 10110000 |
++---------+-----------------+-----------+---------+----------+
+| 0x03    | IOCFG0          | 0x40      | 64      | 1000000  |
++---------+-----------------+-----------+---------+----------+
+| 0x04    | SYNC3           | 0x93      | 147     | 10010011 |
++---------+-----------------+-----------+---------+----------+
+| 0x05    | SYNC2           | 0x0b      | 11      | 1011     |
++---------+-----------------+-----------+---------+----------+
+| 0x06    | SYNC1           | 0x51      | 81      | 1010001  |
++---------+-----------------+-----------+---------+----------+
+| 0x07    | SYNC0           | 0xde      | 222     | 11011110 |
++---------+-----------------+-----------+---------+----------+
+| 0x08    | SYNC_CFG1       | 0x09      | 9       | 1001     |
++---------+-----------------+-----------+---------+----------+
+| 0x09    | SYNC_CFG0       | 0x17      | 23      | 10111    |
++---------+-----------------+-----------+---------+----------+
+| 0x0a    | DEVIATION_M     | 0xaa      | 170     | 10101010 |
++---------+-----------------+-----------+---------+----------+
+| 0x0b    | MODCFG_DEV_E    | 0x04      | 4       | 100      |
++---------+-----------------+-----------+---------+----------+
+| 0x0c    | DCFILT_CFG      | 0x15      | 21      | 10101    |
++---------+-----------------+-----------+---------+----------+
+| 0x0d    | PREAMBLE_CFG1   | 0x18      | 24      | 11000    |
++---------+-----------------+-----------+---------+----------+
+| 0x0e    | PREAMBLE_CFG0   | 0x2a      | 42      | 101010   |
++---------+-----------------+-----------+---------+----------+
+| 0x0f    | FREQ_IF_CFG     | 0x3a      | 58      | 111010   |
++---------+-----------------+-----------+---------+----------+
+| 0x10    | IQIC            | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x11    | CHAN_BW         | 0x03      | 3       | 11       |
++---------+-----------------+-----------+---------+----------+
+| 0x12    | MDMCFG1         | 0x46      | 70      | 1000110  |
++---------+-----------------+-----------+---------+----------+
+| 0x13    | MDMCFG0         | 0x05      | 5       | 101      |
++---------+-----------------+-----------+---------+----------+
+| 0x14    | SYMBOL_RATE2    | 0x63      | 99      | 1100011  |
++---------+-----------------+-----------+---------+----------+
+| 0x15    | SYMBOL_RATE1    | 0xa9      | 169     | 10101001 |
++---------+-----------------+-----------+---------+----------+
+| 0x16    | SYMBOL_RATE0    | 0x2a      | 42      | 101010   |
++---------+-----------------+-----------+---------+----------+
+| 0x17    | AGC_REF         | 0x3c      | 60      | 111100   |
++---------+-----------------+-----------+---------+----------+
+| 0x18    | AGC_CS_THR      | 0xf8      | 248     | 11111000 |
++---------+-----------------+-----------+---------+----------+
+| 0x19    | AGC_GAIN_ADJUST | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x1a    | AGC_CFG3        | 0x91      | 145     | 10010001 |
++---------+-----------------+-----------+---------+----------+
+| 0x1b    | AGC_CFG2        | 0x20      | 32      | 100000   |
++---------+-----------------+-----------+---------+----------+
+| 0x1c    | AGC_CFG1        | 0xa9      | 169     | 10101001 |
++---------+-----------------+-----------+---------+----------+
+| 0x1d    | AGC_CFG0        | 0xc0      | 192     | 11000000 |
++---------+-----------------+-----------+---------+----------+
+| 0x1e    | FIFO_CFG        | 0x46      | 70      | 1000110  |
++---------+-----------------+-----------+---------+----------+
+| 0x1f    | DEV_ADDR        | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x20    | SETTLING_CFG    | 0x0b      | 11      | 1011     |
++---------+-----------------+-----------+---------+----------+
+| 0x21    | FS_CFG          | 0x14      | 20      | 10100    |
++---------+-----------------+-----------+---------+----------+
+| 0x22    | WOR_CFG1        | 0x08      | 8       | 1000     |
++---------+-----------------+-----------+---------+----------+
+| 0x23    | WOR_CFG0        | 0x21      | 33      | 100001   |
++---------+-----------------+-----------+---------+----------+
+| 0x24    | WOR_EVENT0_MSB  | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x25    | WOR_EVENT0_LSB  | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x26    | PKT_CFG2        | 0x04      | 4       | 100      |
++---------+-----------------+-----------+---------+----------+
+| 0x27    | PKT_CFG1        | 0x05      | 5       | 101      |
++---------+-----------------+-----------+---------+----------+
+| 0x28    | PKT_CFG0        | 0x20      | 32      | 100000   |
++---------+-----------------+-----------+---------+----------+
+| 0x29    | RFEND_CFG1      | 0x0f      | 15      | 1111     |
++---------+-----------------+-----------+---------+----------+
+| 0x2a    | RFEND_CFG0      | 0x00      | 0       | 0        |
++---------+-----------------+-----------+---------+----------+
+| 0x2b    | PA_CFG2         | 0x34      | 52      | 110100   |
++---------+-----------------+-----------+---------+----------+
+| 0x2c    | PA_CFG1         | 0x56      | 86      | 1010110  |
++---------+-----------------+-----------+---------+----------+
+| 0x2d    | PA_CFG0         | 0x7e      | 126     | 1111110  |
++---------+-----------------+-----------+---------+----------+
+| 0x2e    | PKT_LEN         | 0xff      | 255     | 11111111 |
++---------+-----------------+-----------+---------+----------+
+
+Extended registers:
+
++---------+----------------+-----------+---------+----------+
+| Address |      Name      | Hex Value | Decimal |  Binary  |
++=========+================+===========+=========+==========+
+| 0x00    | IF_MIX_CFG     | 0x0       | 0       | 0        |
++---------+----------------+-----------+---------+----------+
+| 0x01    | FREQOFF_CFG    | 0x30      | 48      | 110000   |
++---------+----------------+-----------+---------+----------+
+| 0x02    | TOC_CFG        | 0x4b      | 75      | 1001011  |
++---------+----------------+-----------+---------+----------+
+| 0x0a    | FREQOFF1       | 0x0       | 0       | 0        |
++---------+----------------+-----------+---------+----------+
+| 0x0b    | FREQOFF0       | 0xde      | 222     | 11011110 |
++---------+----------------+-----------+---------+----------+
+| 0x0c    | FREQ2          | 0x6c      | 108     | 1101100  |
++---------+----------------+-----------+---------+----------+
+| 0x0d    | FREQ1          | 0x7a      | 122     | 1111010  |
++---------+----------------+-----------+---------+----------+
+| 0x0e    | FREQ0          | 0xe1      | 225     | 11100001 |
++---------+----------------+-----------+---------+----------+
+| 0x91    | SERIAL_STATUS  |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x12    | FS_DIG1        | 0x0       | 0       | 0        |
++---------+----------------+-----------+---------+----------+
+| 0x13    | FS_DIG0        | 0x5f      | 95      | 1011111  |
++---------+----------------+-----------+---------+----------+
+| 0x14    | FS_CAL3        |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x15    | FS_CAL2        | 0x20      | 32      | 100000   |
++---------+----------------+-----------+---------+----------+
+| 0x16    | FS_CAL1        | 0x40      | 64      | 1000000  |
++---------+----------------+-----------+---------+----------+
+| 0x17    | FS_CAL0        | 0xe       | 14      | 1110     |
++---------+----------------+-----------+---------+----------+
+| 0x18    | FS_CHP         | 0x28      | 40      | 101000   |
++---------+----------------+-----------+---------+----------+
+| 0x19    | FS_DIVTWO      | 0x3       | 3       | 11       |
++---------+----------------+-----------+---------+----------+
+| 0x1b    | FS_DSM0        | 0x33      | 51      | 110011   |
++---------+----------------+-----------+---------+----------+
+| 0x1d    | FS_DVC0        | 0x17      | 23      | 10111    |
++---------+----------------+-----------+---------+----------+
+| 0x1f    | FS_PFD         | 0x50      | 80      | 1010000  |
++---------+----------------+-----------+---------+----------+
+| 0x20    | FS_PRE         | 0x6e      | 110     | 1101110  |
++---------+----------------+-----------+---------+----------+
+| 0x21    | FS_REG_DIV_CML | 0x14      | 20      | 10100    |
++---------+----------------+-----------+---------+----------+
+| 0x22    | FS_SPARE       | 0xac      | 172     | 10101100 |
++---------+----------------+-----------+---------+----------+
+| 0x23    | FS_VCO4        | 0x11      | 17      | 10001    |
++---------+----------------+-----------+---------+----------+
+| 0x24    | FS_VCO3        |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x25    | FS_VCO2        | 0x48      | 72      | 1001000  |
++---------+----------------+-----------+---------+----------+
+| 0x26    | FS_VCO1        |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x27    | FS_VCO0        | 0xb4      | 180     | 10110100 |
++---------+----------------+-----------+---------+----------+
+| 0x28    | GBIAS6         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x29    | GBIAS5         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2a    | GBIAS4         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2b    | GBIAS3         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2c    | GBIAS2         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2d    | GBIAS1         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2e    | GBIAS0         |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x2f    | IFAMP          |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x30    | LNA            |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x31    | RXMIX          |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x32    | XOSC5          | 0xe       | 14      | 1110     |
++---------+----------------+-----------+---------+----------+
+| 0x33    | XOSC4          |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x34    | XOSC3          |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x35    | XOSC2          |           |         |          |
++---------+----------------+-----------+---------+----------+
+| 0x36    | XOSC1          | 0x3       | 3       | 11       |
++---------+----------------+-----------+---------+----------+
