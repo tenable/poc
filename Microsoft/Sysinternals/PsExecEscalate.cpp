@@ -20,7 +20,7 @@ typedef struct psexecProcess {
     BYTE padding_0[0x210];
     wchar_t processPath[0x100];
     DWORD p0[2] = { 0 };
-    wchar_t processArg[0x100];
+    wchar_t processArg[0x100] = {0};
     BYTE padding_1[0x3cF8] = { 0 };
     wchar_t currentDirectory[0x100] = { 0 };
     BYTE padding_3[0x110] = { 0 };
