@@ -12,9 +12,6 @@
 #include <tlhelp32.h>
 #include <AclAPI.h>
 
-HANDLE version_mutex = CreateMutex(NULL, FALSE, NULL);
-psexecProcess* proc = new psexecProcess;
-
 // PSexec process structure sent to PSEXESVC
 typedef struct psexecProcess {
     BYTE padding_0[0x210];
@@ -32,6 +29,8 @@ typedef struct psexecProcess {
     BYTE padding_6[0x4000];
 };
 
+HANDLE version_mutex = CreateMutex(NULL, FALSE, NULL);
+psexecProcess* proc = new psexecProcess;
 
 bool ProcessExists(const wchar_t procName[MAX_PATH]) {
     PROCESSENTRY32 entry;
